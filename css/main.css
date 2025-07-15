@@ -28,7 +28,6 @@ body {
     }
     .navbar .nav-link {
       font-size: 1.4rem;
-      margin-left: 15px;
       color: #0f425e;
       transition: all 0.5s ease-in-out;
     }
