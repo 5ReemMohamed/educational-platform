@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title> Educational Platform</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="100" tabindex="0">
+
+<nav id="navbar-example" class="navbar navbar-expand-xl bg-white py-1 sticky-top shadow-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-icon">
+        <img src="images/logo.png" height="100" alt="logo">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mx-auto align-items-center d-flex gap-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#stages">المراحل الدراسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#teachers">المعلمون</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#statement">سلسلة البيان</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">المدونة</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">الدورات</a>
+          <ul class="dropdown-menu text-end">
+            <li><a class="dropdown-item" href="recordedLessons.html">الدورات المسجلة</a></li>
+            <li><a class="dropdown-item" href="#live-courses">الدروس المباشرة</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <a class="btn btn-login" href="login.html"><i class="fas fa-user-graduate me-1"></i> دخول الطلاب</a>
+      </div>
+      <div class="d-flex justify-content-center align-items-center me-3 mt-3">
+        <a class="nav-link fs-1" href="profile.html"><i class="fas fa-user-circle"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+<header id="home">
+
+    <div class="container hero-container">
+        <div class="row g-4">
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center text-center">
+                <div class="content py-5 py-lg-0 d-flex flex-column justify-content-center align-items-center text-center">
+                        <h1>منصة
+                        <span>
+                          البيان التعليمية
+
+                        </span>
+                        التعليمية</h1>
+                        <p>تعلم وتطور مع أفضل المعلمين في جميع المواد الدراسية من الصف الأول حتى الثانوية العامة</p>
+                           <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                                
+                                <a class="gradient-btn text-decoration-none" href="recordedLessons.html">
+                                    <i class="fas fa-play play-icon"></i>
+                                    <span>ابدأ التعلم الآن</span>
+                                </a>
+                              
+                                 <a class="outline-btn text-decoration-none" href="index.html#statements">
+                                    تصفح المقررات
+                                </a>
+                            </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <img src="images/header1.png" alt="Graduate Student">   
+                      <img class="hero-bottom " src="https://cdn.prod.website-files.com/66b9438575655d43afbfb651/66baff1b30cd4df12398d271_Overlay%20Down%20Author.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+     
+</header>
+<main>
+    <section class="section-padding live-courses" id="live-courses">
+        <div class="container">
+            <div class="heading text-center mb-5">
+                <h2 class="title">الدروس المباشرة</h2>
+                <p class="description">انضم إلى الدروس المباشرة التفاعلية مع أفضل المعلمين عبر Zoom و Google Meet </p>
+            </div>
+  <ul class="nav nav-tabs justify-content-center mb-4" id="lessonTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="now-tab" data-bs-toggle="tab" data-bs-target="#now" type="button" role="tab">مباشر الآن (1)</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab">الدروس القادمة (3)</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="recorded-tab" data-bs-toggle="tab" data-bs-target="#recorded" type="button" role="tab">الدروس المسجلة (2)</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="lessonTabsContent">
+    <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow position-relative">
+            <img src="https://images.pexels.com/photos/5212323/pexels-photo-5212323.jpeg" class="card-img-top" alt="...">
+            <span class="status-badge d-flex justify-content-center align-items-center gap-2"><i class="fas fa-users"></i> 32/35</span>
+            <span class="coming-badge">قادم</span>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">درس مباشر: العلوم - التفاعلات الكيميائية</h5>
+              <p class=" teacher-name fw-bold">أ. فاطمة حسن</p>
+              <span class="badge badge-lang">العلوم</span>
+              <span class="">الصف التاسع</span>
+              <p class="card-description">استكشاف التفاعلات الكيميائية من خلال التجارب المباشرة</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="day">
+                <i class="fas fa-calendar-alt ms-1 text-blue fs-5"></i>
+                <span>الاثنين، 3 اكتوبر 2025 </span>
+              </div>
+              <div class="hour">
+                <i class="fas fa-clock ms-1 text-blue fs-5"></i>
+                <span>16:00 - 60 دقيقة</span>
+              </div>
+              </div>
+              <div>
+                <button class="btn remind-me"><i class="fas fa-calendar-alt ms-1"></i> تذكيري</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow position-relative">
+            <img src="https://images.pexels.com/photos/5212341/pexels-photo-5212341.jpeg" class="card-img-top" alt="...">
+            <span class="status-badge"><i class="fas fa-users"></i> 38/40</span>
+            <span class="coming-badge">قادم</span>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">درس مباشر: الرياضيات - المعادلات التربيعية</h5>
+              <p class=" teacher-name fw-bold">أ. محمد علي</p>
+              <span class="badge badge-lang">الرياضيات</span>
+              <span class="">الصف العاشر</span>
+              <p class="card-description">حل المعادلات التربيعية بالطرق المختلفة مع التطبيقات العملية</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="day">
+                <i class="fas fa-calendar-alt ms-1 text-blue fs-5"></i>
+                <span>الاثنين، 3 اكتوبر 2025 </span>
+              </div>
+              <div class="hour">
+                <i class="fas fa-clock ms-1 text-blue fs-5"></i>
+                <span>16:00 - 60 دقيقة</span>
+              </div>
+              </div>
+              <div>
+                <button class="btn remind-me"><i class="fas fa-calendar-alt ms-1"></i> تذكيري</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow position-relative">
+            <img src="https://images.pexels.com/photos/5212331/pexels-photo-5212331.jpeg" class="card-img-top" alt="...">
+            <span class="status-badge"><i class="fas fa-users"></i> 45/50</span>
+            <span class="coming-badge">قادم</span>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">درس مباشر: قواعد اللغة العربية - الإعراب</h5>
+              <p class=" teacher-name w-bold">أ. سارة أحمد</p>
+              <span class="badge badge-lang">اللغة العربية</span>
+              <span class="">الصف الثامن</span>
+              <p class="card-description">درس تفاعلي في قواعد الإعراب مع أمثلة وتطبيقات عملية</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="day">
+                <i class="fas fa-calendar-alt ms-1 text-blue fs-5"></i>
+                <span>الاثنين، 3 اكتوبر 2025 </span>
+              </div>
+              <div class="hour">
+                <i class="fas fa-clock ms-1 text-blue fs-5"></i>
+                <span>16:00 - 60 دقيقة</span>
+              </div>
+              </div>
+              <div>
+                <button class="btn remind-me"><i class="fas fa-calendar-alt ms-1"></i> تذكيري</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="tab-pane fade" id="now" role="tabpanel">
+        <div class="live-card">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="live-badge">مباشر الآن</div>
+              <div class="right-badge d-flex justify-content-center align-items-center"><p class="text-white"><i class="fas fa-users ms-2"></i> 28/30</p></div>
+          </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-4">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/5212323/pexels-photo-5212323.jpeg" alt="teacher">
+                    </div>
+                </div>
+              
+                <div class="col-lg-4">
+                    <div class="card-content">
+                        <h5>درس مباشر الآن: اللغة الإنجليزية - المحادثة</h5>
+                        <div class="details mb-4">
+                            <span class="text-white fw-bold">أ. أحمد محمود</span>
+                            <span class="badge-subject">اللغة الإنجليزية</span>
+                            <span class="small">الصف السابع</span>
+                        </div>
+                        <div class="fs-5 text-white mb-4">تطوير مهارات المحادثة باللغة الإنجليزية</div>
+                        <div class="small d-flex justify-content-between">
+                            <div>
+                                <i class="fas fa-clock ms-2 text-blue"></i>60 دقيقة
+                            </div>
+                            <div><span class="ms-3"><i class="fas fa-video ms-1 video-icon"></i> Google Meet</span></div>
+                        </div>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                     <div class="left-box">
+                        
+                        <button class="join-btn d-flex align-items-center justify-content-center gap-2"><i class="fas fa-video"></i> انضم الآن</button>
+                        <div class="time">يبدأ في 14:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+    <!-- Recorded Lessons (Empty for Demo) -->
+    <div class="tab-pane fade live-record-course" id="recorded" role="tabpanel">
+      <div class="row g-4 mt-5">
+              <div class="col-md-6 col-lg-4">
+                <div class="course">
+                  <div class="img">
+                    <img src="images/islamic.jpg" alt="course image">
+                    <div class="badge">4.9 <i class="fas fa-star text-warning me-2"></i></div>
+                  </div>
+                  <div class="p-4">
+                    <h3>درس مسجل: التربية الإسلامية - السيرة النبوية</h3>
+                  <span class="teacher-name">أ. سارة أحمد</span>
+                  <div>
+                    <span class="badge-subject">التربية الإسلامية</span>
+                    <span class="small text-white me-2">الصف السادس</span>
+                  </div>
+                  <p>دراسة السيرة النبوية الشريفة والدروس المستفادة</p>
+                 <div class="icons d-flex justify-content-between align-items-center">
+                  <div class="icon1 ">
+                    <i class="fas fa-clock"></i>
+                    <span class="d-inline-block me-1 text-white">45 دقيقة</span>
+                  </div>
+                  <div class="icon2">
+                    <i class="fas fa-users ms-1"></i>
+                    <span class="d-inline-block text-white">156 مشاهدة</span>
+                  </div>
+                </div>
+                  <div class="">
+                    <button class="btn-watch d-flex align-items-center justify-content-center gap-2"> مشاهدة التسجيل</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="course">
+                  <div class="img">
+                    <img src="images/islamic.jpg" alt="course image">
+                    <div class="badge">4.9 <i class="fas fa-star text-warning me-2"></i></div>
+                  </div>
+                  <div class="p-4">
+                    <h3>درس مسجل: التربية الإسلامية - السيرة النبوية</h3>
+                  <span class="teacher-name">أ. سارة أحمد</span>
+                  <div>
+                    <span class="badge-subject">التربية الإسلامية</span>
+                    <span class="small text-white me-2">الصف السادس</span>
+                  </div>
+                  <p>دراسة السيرة النبوية الشريفة والدروس المستفادة</p>
+                 <div class="icons d-flex justify-content-between align-items-center">
+                  <div class="icon1 ">
+                    <i class="fas fa-clock"></i>
+                    <span class="d-inline-block me-1 text-white">45 دقيقة</span>
+                  </div>
+                  <div class="icon2">
+                    <i class="fas fa-users ms-1"></i>
+                    <span class="d-inline-block text-white">156 مشاهدة</span>
+                  </div>
+                </div>
+                  <div class="">
+                    <button class="btn-watch d-flex align-items-center justify-content-center gap-2"> مشاهدة التسجيل</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+  </div>
+        </div>
+    </section>
+</main>
+ <footer class="footer text-white">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <a class="navbar-brand d-flex justify-content-center align-items-center justify-content-lg-start fw-bold text-center" href="index.html" title="العودة للصفحة الرئيسية">
+            <img src="images/logo.png" alt="logo image">
+          </a>
+        </div>
+        <div class=" col-md-8 mb-6 mb-md-0 ">
+         <div class="footer-content d-flex flex-column justify-content-center align-items-center text-center">
+           <h3>روابط سريعة</h3>
+          <ul class="footer-links d-flex flex-wrap gap-4 justify-content-center">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index.html#about">من نحن</a></li>
+            <li><a href="index.html#stages">المراحل الدراسية</a></li>
+            <li><a href="index.html#teachers">المعلمون</a></li>
+            <li><a href="index.html#statements">سلسلة البيان</a></li>
+            <li><a href="blog.html">المدونة</a></li>
+            <li><a href="recordedLessons.html">الدروس المسجلة </a></li>
+            <li><a href="#live-courses">الدروس المباشره </a></li>
+          </ul>
+         </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row footer-bottom justify-content-center align-items-center">
+        <div class="col-md-6">
+          <p class="text-center">جميع الحقوق محفوظة لمنصة البيان التعليمية لعام ٢٠٢٥.</p>
+        </div>
+        <div class="col-md-6 end-text">
+           <div class="d-flex justify-content-center align-items-center gap-2">
+                  <span class="text-center">تصميم وبرمجه </span>
+                  <div class="gmt-logo">
+                    <a href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL" target="_blank" class="gmt-text">GMT</a>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="fixed-contact-buttons">
+        <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top" class="scroll-top">
+          <i class="fa-solid fa-angle-up"></i>
+        </button>
+  </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

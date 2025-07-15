@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title> Educational Platform</title>
+</head>
+<body>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <div class="login-card shadow shadow-sm">
+                        <div class="heading text-center mb-4">
+                            <h2 class="title">انشاء حساب</h2>
+                            <p class="description"> من فضلك أدخل بياناتك لإنشاء حساب جديد.</p>
+                        </div>
+                        <form action="">
+                        <div class="row g-3">
+
+                            <div class="co-12">
+                                <label for="userName">الاسم</label>
+                                <input class="w-100" type="text" id="userName" name="userName" placeholder="ادخل اسمك">
+                                <p class="error-msg text-danger"></p>
+                            </div>
+
+                            <div class="co-12">
+                                <div class="password-field position-relative">
+                                    <label for="password">الرقم السري</label>
+                                    <input class="w-100" type="password" id="password" name="password" placeholder="ادخل الرقم السري">
+                                    <i class="fas fa-eye toggle-password" data-input="password"></i>
+                                </div>
+                                <div class="error-msg position-static text-danger"></div>
+                            </div>
+
+                            <div class="co-12">
+                                <div class="password-field position-relative">
+                                    <label for="confirmPassword">تأكيد الرقم السري</label>
+                                    <input class="w-100" type="password" id="confirmPassword" name="confirm-Password" placeholder="تأكيد الرقم السري">
+                                    <i class="fas fa-eye toggle-password" data-input="confirmPassword"></i>
+                                </div>
+                                <div class="error-msg position-static text-danger"></div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-login w-100">انشئ حسابك</button>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="d-flex justify-content-center align-items-center p-1">
+                                    <a class="create-account" href="login.html">لدي حساب بالفعل؟</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    </div>
+                </div>
+                  <div class="col-md-6">
+                    <div class="img">
+                        <img src="images/signup.webp" class="w-100" alt="login">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/signup.js"></script>
+
+</body>
+</html>
