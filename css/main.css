@@ -39,6 +39,11 @@ body {
         border-radius: 50px;
         padding: 2px 20px;
      }
+     .navbar-toggler{
+  color:#0f425e;
+  border: 1px solid #0f425e;
+  padding: 10px 15px;
+}
     .btn-login {
        background:  linear-gradient(to right, #0f425e, #137b9b);
       color: white;
