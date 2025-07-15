@@ -32,7 +32,7 @@ body {
       color: #0f425e;
       transition: all 0.5s ease-in-out;
     }
-     .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+     .navbar-nav .nav-link.active {
         color: #fff !important;
         background-color:#0f425e ;
         font-weight: 500;
@@ -58,7 +58,7 @@ body {
 }
 
 .dropdown-menu {
-  margin-top: 0;
+margin: 5px 0px;
 }
 
     .brand-text {
