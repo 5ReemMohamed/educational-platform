@@ -55,13 +55,6 @@
         <li class="nav-item">
           <a class="nav-link" href="blog.html">المدونة</a>
         </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button">الدورات</a>
-            <ul class="dropdown-menu text-center text-center d-flex justify-content-center align-items-center gap-2">
-                <li><a class="dropdown-item" href="recordedLessons.html">الدورات المسجلة</a></li>
-                <li><a class="dropdown-item" href="liveCourses.html">الدروس المباشرة</a></li>
-            </ul>
-        </li>
       </ul>
 
       <div class="d-flex justify-content-center align-items-center">
@@ -177,20 +170,39 @@
   </form>
 
   <!-- 🎉 Success Certificate -->
-  <div class="result-card card shadow-lg mx-auto mt-5 text-center border-success" id="passCard" style="max-width: 600px;">
-    <div class="card-body text-white">
-      <h2 class="success-title mb-3">🎉 تهانينا!</h2>
-      <h3 class="mb-3">شهادة إتمام الدورة</h3>
-      <p class="lead">لقد اجتزت الاختبار بنجاح.</p>
-      <p class="mb-2 fs-5">النسبة: <strong id="scorePercent"></strong>%</p>
-      <p class="mb-2 fs-5">التقدير: <strong id="gradeText" class="text-blue"></strong></p>
-      <p class="small">التاريخ: <span id="certDate"></span></p>
-      <a class="back-btn" href="recordedLessons.html">العوده للدورات</a>
-    </div>
+<div class="result-card card mx-auto mt-5 text-center" id="passCard">
+  <div class="d-flex justify-content-end">        
+    <button class="btn print-btn">طباعة الشهادة</button>
   </div>
 
-  <!-- ❌ Fail Message -->
-  <div class="result-card card shadow-lg mx-auto mt-5 text-center border-danger" id="failCard" style="max-width: 600px;">
+  <div class="landscape-wrapper">
+    <div class="certificate-container">
+        <img src="images/logo2.png" alt="شعار المنصة">
+        <h2>منصة البيان التعليمية</h2>
+        <p>تمنح هذه الشهادة إلى</p>
+        <h3>محمد إبراهيم محمد أبوالمعاطي</h3>
+        <p>وذلك لاجتيازه دورة</p>
+        <h4>"دوره جديدة"</h4>
+        <p>بتقدير <strong><span id="scorePercent">٪0</span></strong> وبواقع <strong>120</strong> ساعة تدريبية</p>
+        <p>التقدير: <strong id="gradeText"></strong></p>
+        <p>تاريخ الإصدار: <span id="certDate"></span></p>
+
+        <div class="signature">
+            <div>
+                <p>د. طلعت ناجح</p>
+                <hr>
+                <p>المشرف العام</p>
+            </div>
+            <div>
+                <p>د. طلعت ناجح</p>
+                <hr>
+                <p>مدرب الدورة</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <div class="result-card card shadow-lg mx-auto mt-5 text-center border border-danger" id="failCard">
     <div class="card-body text-white">
       <h2 class="text-danger mb-3">❌ لم تجتز الاختبار</h2>
       <p class="lead">نعتذر، لم تتمكن من اجتياز هذا الاختبار بنجاح.</p>
@@ -221,8 +233,6 @@
             <li><a href="index.html#teachers">المعلمون</a></li>
             <li><a href="index.html#statements">سلسلة البيان</a></li>
             <li><a href="blog.html">المدونة</a></li>
-            <li><a href="recordedLessons.html">الدروس المسجلة </a></li>
-            <li><a href="liveCourses.html">الدروس المباشره </a></li>
           </ul>
          </div>
         </div>

@@ -57,13 +57,6 @@ body {
         color: #fff;
         transform: scale(1.02);
     }
-  .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-margin: 5px 0px;
-}
 
     .brand-text {
       line-height: 1;
@@ -307,19 +300,6 @@ z-index: 2;
       transform: translateX(0);
     }
   }
-
-  .glass-card .button button {
-    background: linear-gradient(to right, #185b80, #137b9b);
-    border: none !important;
-    color: white;
-    outline: none;
-    padding: 10px 20px;
-    font-family: 'Hayah', sans-serif;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: 0.3s ease;
-  }
    .glass-card .body p{
     font-size: 1.05rem;
     color: #83d3ff !important;
@@ -442,9 +422,13 @@ z-index: 2;
   margin-top: 15px;
 }
 
-.inner .button button {
+/* edit button for the teacher card */
+.inner .button a {
+  text-decoration: none;
   margin-top: 15px;
   width: 100%;
+  display: block;
+  text-align: center;
   background-color: #3f8bb4;
   border: none;
   padding: 10px 15px;
@@ -456,8 +440,8 @@ z-index: 2;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-
-.inner .button button:hover {
+/* edit button for the teacher card */
+.inner .button a:hover {
   transform: scale(1.03);
    background-color: #256588;
 }
@@ -510,7 +494,7 @@ z-index: 2;
   font-size: .9rem;
   font-weight: 500;
 }
-.statement .download-btn,.course .download-btn{
+.course .download-btn{
   margin-top: 15px;
   background-color: #3f8bb4;
   border: none;
@@ -523,7 +507,7 @@ z-index: 2;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.statement .download-btn:hover,.statement .see-btn:hover,.course .download-btn:hover,.course .see-btn:hover{
+.statement .see-btn:hover,.course .download-btn:hover,.course .see-btn:hover{
   background-color: #256588;
 }
 .statement .see-btn , .course .see-btn{
@@ -692,22 +676,23 @@ z-index: 2;
       font-size: 1.2rem;
     }
 
-
+ /* edit navtabs */
 .nav-tabs{
   border-bottom: none;
   background-color: #fff;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   margin: 0px auto;
   padding: 10px 0px;
   border-radius: 20px;
 }
 @media screen and (min-width:1200px) {
+  /* edit navtabs */
   .nav-tabs{
-  width: 40%;
+  width: 50%;
 }
 }
  .nav-tabs .nav-link{
@@ -814,7 +799,7 @@ z-index: 2;
       margin: 10px 0px;
      }
 
-       .live-card {
+    .live-card {
       background-color: #0b1820;
       border-left: 6px solid #17aeff;
       border-radius: 1rem;
@@ -934,11 +919,7 @@ z-index: 2;
       color: white;
       background-color: #137b9b;
     }
-    .result-card {
-      display: none;
-      background-color: #0b1820;
-      border-radius: 20px;
-    }
+    
     .success-title{
       color: #1eaad4;
       font-size: 2.5rem;
@@ -1262,3 +1243,218 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+
+
+/* ///////////////////////////////////////////////// */
+
+
+/* teacher profile */
+.teacher-info{
+  border-radius: 0;
+   background-color: #0f425e;
+  padding: 30px 20px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.teacher-info .img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.teacher-info .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   border-radius: 50%;
+}
+
+.teacher-info .teacher-content h3{
+  font-size: 2.5rem;
+}
+.about-teacher{
+  background-color: #0b1820;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 20px 20px 0px 0px;
+}
+.about-teacher h4{
+  font-size: 2.2rem;
+  color: #17aeff;
+}
+.about-teacher p{
+  font-size: 1.2rem;
+}
+.course-card{
+  transition: all 0.5s ease-in-out;
+}
+.course-card:hover{
+  transform: translateY(-10px);
+}
+.course-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.course-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width:768px) {
+  .teacher-info .img{
+  margin-right: 200px;
+}
+}
+
+  /* Rating Stars */
+  .rating-card{
+    max-width: 450px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 40px;
+    border: 1px solid #17aeff;
+    transition: all 0.5s ease-in-out;
+  }
+   .rating-card:hover{
+    transform: translateY(-10px);
+   }
+    .rating-card h3{
+      color: #05a8ff;
+      font-size: 2rem;
+    }
+    .rating-stars {
+      direction: rtl;
+      font-size: 1.4rem;
+      display: inline-flex;
+      gap: 5px;
+      justify-content: center;
+    }
+
+    .rating-stars input {
+      display: none;
+    }
+
+    .rating-stars label {
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .rating-stars input:checked ~ label,
+    .rating-stars label:hover,
+    .rating-stars label:hover ~ label {
+      color: gold;
+    }
+    .rating-card .btn-send{
+      background-color: #2082a0;
+      color:#fff;
+      font-size: 1.3rem;
+    }
+
+    .live-course img{
+      border-radius: 20px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .live-course .card{
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    /* certificate */
+    .result-card {
+      display: none;
+      background-color: transparent;
+      max-width: 600px;
+      border: none ;
+    }
+
+    .result-card h4{
+      color: #05a8ff;
+    }
+     .landscape-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.certificate-container {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+  background: #071b27;
+  padding: 10px;
+  color: white;
+  border: 8px double #05a8ffa3;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+  background-image: url('https://cdn.prod.website-files.com/66b9438575655d43afbfb651/66bb0d31cbc96baff3e48601_Abstract%20For%20You%20One.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signature {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.signature div {
+  text-align: center;
+  min-width: 200px;
+}
+
+.certificate-container img {
+  width: 200px;
+  margin-bottom: 15px;
+  margin: 5px auto;
+}
+
+        .print-btn{
+          background-color: #1eaad4 !important;
+          border: 1px solid #1eaad4;
+          color: #fff;
+          transition: all 0.5s ease-in-out;
+          font-size: 1.3rem;
+        }
+          .print-btn:hover{
+             color: #fff;
+          }
+.result-card hr{
+  border-top: 2px solid #05a8ff; width: 150px; margin: 5px auto;
+}
+      /* modal */
+      
+      .modal-content{
+        border: 1px solid #05a8ff;
+        background-color: #040c11;
+      }
+      .modal-header h2 {
+        color: #05a8ff;
+        font-size: 2rem;
+      }
+      .fa-xmark{
+        color: #05a8ff !important;
+        cursor: pointer;
+      }
+
+      .modal-body h3{
+        color: #05a8ff;
+      }
+      .modal-body ul li{
+        color: white;
+        font-size: 1.2rem;
+       
+      }
+       .modal-body ul li i{
+        color: #05a8ff;
+        font-size: 1.3rem;
+         margin-left: 5px;
+       }
